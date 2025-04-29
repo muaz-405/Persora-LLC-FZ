@@ -4,6 +4,7 @@
 <!-- Mirrored from fin-stab.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Apr 2025 15:12:58 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+    <link rel="icon" type="image/png" href="/files/110/favicon.png">
     <meta charset="utf-8">
     <meta name="robots" content="index,follow">
 
@@ -137,10 +138,383 @@
         <meta name="webcanape" content="superfast">
         
     <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)g-no-js(\s|$)/,"$1g-js$2")})(document,window,0);</script>
+    <style>
+        .main-nav {
+            background-color: #f5f5f5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        .company-address {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            font-size: 14px;
+            color: #333;
+        }
+        .address-text {
+            max-width: 400px;
+        }
+        .view-map {
+            color: #007bff;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: color 0.3s;
+        }
+        .view-map:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .nav-menu li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+            padding: 10px 0;
+            display: block;
+        }
+        .nav-menu li a:hover {
+            color: #007bff;
+        }
+        .has-submenu {
+            position: relative;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            list-style: none;
+            padding: 10px 0;
+            min-width: 200px;
+            z-index: 1000;
+        }
+        .has-submenu:hover .submenu {
+            display: block;
+        }
+        .submenu li a {
+            padding: 8px 20px;
+            white-space: nowrap;
+        }
+        .submenu li a:hover {
+            background: #f0f0f0;
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        @media (max-width: 1024px) {
+            .company-address {
+                font-size: 12px;
+            }
+            .address-text {
+                max-width: 300px;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: #f5f5f5;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .nav-menu li {
+                text-align: center;
+                padding: 10px 0;
+            }
+            .submenu {
+
+/* Modern Card Styles */
+.category__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.category__item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.category__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.category__imgbox {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.category__imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category__item:hover .category__imgbox img {
+    transform: scale(1.1);
+}
+
+.category__title {
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Modern Form Styles */
+.form__col-1, .form__col-1-2 {
+    margin-bottom: 1.5rem;
+}
+
+.form__input input, .form__input textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.form__input input:focus, .form__input textarea:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 0 3px rgba(255,107,0,0.1);
+    outline: none;
+}
+
+.form__input input::placeholder, .form__input textarea::placeholder {
+    color: #999;
+}
+
+.form__checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form__checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.form__checkbox-trigger {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.form__checkbox input[type="checkbox"]:checked + .form__checkbox .form__checkbox-trigger {
+    background: #ff6b00;
+    border-color: #ff6b00;
+}
+
+.form__checkbox-label a {
+    color: #ff6b00;
+    text-decoration: none;
+}
+
+.form__checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+.form__errors {
+    background: #fff3f3;
+    border-left: 4px solid #ff3b30;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+/* Service Cards */
+.picture__item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.picture__inner {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.picture__text {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.picture__text p {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.picture__text a {
+    color: #ff6b00;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.picture__text a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6b00;
+    transition: width 0.3s ease;
+}
+
+.picture__text a:hover::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category__items {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .form__col-1, .form__col-1-2 {
+        width: 100%;
+    }
+    
+    .form__input input, .form__input textarea {
+        font-size: 16px; /* Prevents zoom on mobile */
+    }
+    
+    .picture__text {
+        position: relative;
+        left: 0 !important;
+        top: 0 !important;
+        margin: 1rem;
+    }
+    
+    .picture__inner {
+        padding-top: 75%; /* 4:3 aspect ratio for mobile */
+    }
+}
+                position: static;
+                box-shadow: none;
+                display: none;
+                padding-left: 20px;
+            }
+            .has-submenu.active .submenu {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
     
-    <body class="g-main browser-mozilla">
+    <body style="padding-top: 80px;">
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="company-address">
+                <span class="address-text">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai U.A.E </span><a href="contacts/index.html" class="view-map">View map</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about/index.html">About Us</a></li>
+                <li class="has-submenu">
+                    <a href="services/index.html">Services</a>
+                    <ul class="submenu">
+                        <li><a href="audit/index.html">Audit</a></li>
+                        <li><a href="consalting/index.html">Consulting</a></li>
+                        <li><a href="accounting/index.html">Accounting</a></li>
+                        <li><a href="tax accounting/index.html">Tax Accounting</a></li>
+                        <li><a href="Legal services/index.html">Legal Services</a></li>
+                        <li><a href="personnel records/index.html">Personnel Records</a></li>
+                        <li><a href="security-transactions/index.html">Transaction Security</a></li>
+                        <li><a href="IFRS/index.html">IFRS</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts/index.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+        
+        // Handle submenu on mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const hasSubmenu = document.querySelectorAll('.has-submenu');
+            
+            hasSubmenu.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        this.classList.toggle('active');
+                    }
+                });
+            });
+        });
+    </script>
+    <div class="g-page">in browser-mozilla">
                 <input type="hidden" id="current_language" value="ru">
         <input type="hidden" id="current_section" value="78">
         <input type="hidden" id="js-adaptive-min-form-width" value="1024">
@@ -154,21 +528,21 @@
 
             <!-- block -->
 
-            <div class="b-logo " ><a href="/index.html"><img alt="«Финансовая стабильность» – юридические, финансовые, аудиторские услуги" src="../files/110/head0.png"></a>
+            <div class="b-logo " ><a href="../index.html"><img alt="«Финансовая стабильность» – юридические, финансовые, аудиторские услуги" src="../files/110/head0.png"></a>
             </div>
             <div class="pilot__1 "><div class="b-tel b-inb-responsive"><a href="tel:+971527830384" rel="nofollow">+971 52 783 0384</a></div>
 
 <div class="b-address b-inb-responsive">Call from 10:00 to 18:00</div>
                             </div>
-            <div class="pilot__2 "><div class="b-btn b-btn--service"><a href="orderservices/index.html">Order services</a></div>
+            <div class="pilot__2 "><div class="b-btn b-btn--service"><a href="leave a request for services or consultation/index.html">Order services</a></div>
                             </div>
             <div class="pilot__3 "><div class="b-btn b-btn--consul"><a href="Get a free consultation/index.html">Get a consultation</a></div>
                             </div>
-            <div class="pilot__4 ">Moscow, Peasant Square, 11, p. 1&nbsp; &nbsp; &nbsp;<a href="contacts/index.html" rel="nofollow">View on map</a>                            </div>
+            <div class="pilot__4 ">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai U.A.E&nbsp; &nbsp; &nbsp;<a href="contacts/index.html" rel="nofollow">View on map</a>                            </div>
             <div class="pilot__5 "><div class="b-socium">
-<div class="socium__item"><a rel="nofollow" href="https://t.me/FinStab" target="_blank"><span class=" fab fa-telegram sk-fontawesome    " style="font-size:20px;">&nbsp;</span></a></div>
 
-<div class="socium__item"><a rel="nofollow" href="https://wa.me/79039610911" target="_blank"><span class=" fab fa-whatsapp sk-fontawesome    " style="font-size:20px;">&nbsp;</span></a></div>
+
+<div class="socium__item"><a rel="nofollow" href="https://wa.me/+971527830384" target="_blank"><span class=" fab fa-whatsapp sk-fontawesome    " style="font-size:20px;">&nbsp;</span></a></div>
 </div>
                             </div>
         </div>
@@ -178,12 +552,12 @@
         <div class="b-search_wrap">
     <div class="b-search b-search_head js-search-block">
         <div class="search__inner">
-            <form method="GET" class="" action="https://fin-stab.ru/search/">
+            <form method="GET" class="" action="">
                 <div class="search__open js-search-open"></div>
                 <button class="search__btn" type="submit"></button>
                 <div class="search__close js-search-close"></div>
                 <div class="search_inputbox js-search-content">
-                    <input value="" onfocus="this.value=''" placeholder="Поиск " name="search_text" id="search_text_searchHead" />
+                    <input value="" onfocus="this.value=''" placeholder="Search " name="search_text" id="search_text_searchHead" />
                 </div>
             </form>        
         </div>         
@@ -217,6 +591,49 @@ body {
 </style>
 <div class="b-desline">&nbsp;</div>
 <div class="b-picture2"></div>
+<style>
+.b-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.b-sevice {
+    display: flex;
+    justify-content: center;
+}
+.sevice__level-1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sevice__item-1 span a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.sevice__item-1 span a:hover {
+    color: #ff6b00;
+}
+.sevice__item-1 span a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff6b00;
+    transition: width 0.3s ease;
+}
+.sevice__item-1 span a:hover::after {
+    width: 100%;
+}
+</style>
 <div class="b-header hide-on-tablet hide-on-mobile ">
      <div class="b-sevice">
         <ul class="sevice__level-1">
@@ -274,11 +691,11 @@ body {
 
 
     <div class="picture__fotorama js-fotorama-slider fotorama-picture"  data-ratioFirstImage='2.1666666666667' data-config='{"autoplay":4000,"loop":true,"transition":"crossfade","transitionduration":1450,"nav":"dots","arrows":"always","height_limits":{"minHeight1024":540,"minHeight1280":540,"minHeight350":340,"minHeight768":340}}' data-minheight='{"minHeight1024":540,"minHeight1280":540,"minHeight350":340,"minHeight768":340}'>
-                <div class="picture__item picture__item_3" data-img="/files/78/slider/sl2.jpg">
+                <div class="picture__item picture__item_3" data-img="https://media.istockphoto.com/id/1573637043/photo/young-asian-female-work-with-financial-papers-at-home-count-on-calculator-before-paying-taxes.jpg?s=612x612&w=0&k=20&c=lYim0aZu4QPu-fT_7SrY_2U_AMAzDW2NdVCjWA-DpWk=">
             <div class="picture__inner">
                                 <div class="picture__text picture__text1" style="left: 30px;top: 20px;">
-                    <p>Treasury accompaniment</p>
-<a href="konsalting/kaznachejskoe-soprovozhdenie/index.html">Learn more</a>
+                    <p>Treasury Accompaniment</p>
+<a href="consalting/Treasury support/">Learn more</a>
                 </div>
                 <div class="picture__text picture__text2" style="left: 30px;top: 80px;">
                     
@@ -291,11 +708,11 @@ body {
                 </div>
             </div>
         </div>
-                <div class="picture__item picture__item_1" data-img="files/78/slider/sl.jpg">
+                <div class="picture__item picture__item_1" data-img="https://muh-sbmyo.marmara.edu.tr/dosya/sbmyo/muh/accounting-aerial-application-bankbook.jpg">
             <div class="picture__inner">
                                 <div class="picture__text picture__text1" style="left: 30px;top: 20px;">
                     <p>Legal services</p>
-<a href="yuridicheskie-uslugi/index.html">Learn more</a>
+<a href="Legal services/index.html">Learn more</a>
                 </div>
                 <div class="picture__text picture__text2" style="left: 30px;top: 140px;">
                     
@@ -308,12 +725,12 @@ body {
                 </div>
             </div>
         </div>
-                <div class="picture__item picture__item_2" data-img="files/78/slider/sl1.jpg">
+                <div class="picture__item picture__item_2" data-img="https://media.istockphoto.com/id/1445807259/photo/business-people-doing-calculations-analyze-the-work-at-the-meeting.jpg?s=612x612&w=0&k=20&c=I1iGLJ15sDfGI13KpPV_Vmpyu9fRYcfdY7187E2gRhc=">
             <div class="picture__inner">
                                 <div class="picture__text picture__text1" style="left: 30px;top: 20px;">
                     <p>Accounting<br />
-услуги</p>
-<a href="buhgalterskij-uchet/index.html">Learn more</a>
+services</p>
+<a href="accounting/Accounting services/index.html">Learn more</a>
                 </div>
                 <div class="picture__text picture__text2" style="left: 30px;top: 140px;">
                     
@@ -339,37 +756,131 @@ body {
                 
 <div class="l-main l-main--content">
     <div class="main__wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section" style="padding: 20px 0; background: #fff; margin: 0 0 30px 0;">
+            <div class="container" style="max-width: 1600px; margin: 0 auto; padding: 0 20px;">
+                <div class="two-columns" style="display: grid; grid-template-columns: 1fr; gap: 30px; align-items: center;">
+                    <!-- Left Column - Image (Larger) -->
+                    <div class="image-content" style="position: relative;">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+                             alt="Financial Stability" 
+                             style="width: 100%; height: auto; min-height: 300px; max-height: 600px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.15);">
+                    </div>
+                    <!-- Right Column - Text -->
+                    <div class="text-content" style="padding: 20px;">
+                        <h1 style="font-size: clamp(2rem, 5vw, 3.8rem); color: #333; margin-bottom: 20px; line-height: 1.2;">Audit Company Financial Stability</h1>
+                        <p style="font-size: clamp(1.1rem, 3vw, 1.8rem); color: #666; line-height: 1.6; margin-bottom: 25px;">Your Trusted Partner in Financial Excellence</p>
+                        <div class="form-group" style="text-align: center; margin: 0;">
+                            <!--<button type="submit" style="background: #ff6b00; color: white; padding: 16px 30px; border: none; border-radius: 8px; font-size: clamp(0.9rem, 2vw, 1rem); font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.5px; width: 100%; max-width: 400px;">
+                                Send Request!-->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            @media (min-width: 768px) {
+                .hero-section .two-columns {
+                    grid-template-columns: 1.2fr 0.8fr !important;
+                }
+                .hero-section .image-content img {
+                    border-radius: 0 12px 12px 0 !important;
+                    height: 600px !important;
+                }
+            }
+            @media (max-width: 767px) {
+                .hero-section {
+                    padding: 10px 0 !important;
+                }
+                .hero-section .text-content {
+                    text-align: center;
+                }
+            }
+        </style>
+
+        <!-- Why Choose Us Section -->
+        <section class="features-section" style="padding: clamp(30px, 5vw, 60px) 0; background: #f8f9fa; margin: 0 15px 30px; border-radius: 12px;">
+            <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(15px, 3vw, 30px);">
+                <h2 style="text-align: center; color: #333; font-size: clamp(1.8rem, 4vw, 2.2rem); margin-bottom: clamp(25px, 5vw, 40px);">Why Choose Us</h2>
+                <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: clamp(20px, 4vw, 30px);">
 
         <div class="l-column l-column--lc l-column--cr">
             <div class="column__center">
                 <div class="column__center-indent">
-                    <h1>Audit company financial stability </h1>
 
-    <div class="b-editor">
-        <p style="text-align: justify;">Our experts daily solve the accounting problems of various degrees of complexity, constantly improving their professional skills and knowledge of the legislation of the Russian Federation. During the existence in the market for the provision of accounting services, the company has established itself as a reliable partner for enterprises from various areas of activity. we provide our customers with all types of accounting services necessary for LLC and IP. It can be both one -time services and integrated services. We love our work and are professionals in it!</p>
+                                <!-- Feature 1 -->
+                                <div class="feature-card" style="background: white; padding: clamp(20px, 4vw, 30px); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                                    <div style="color: #ff6b00; font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: clamp(10px, 2vw, 15px);">🏢</div>
+                                    <h3 style="color: #333; margin-bottom: clamp(10px, 2vw, 15px); font-size: clamp(1.2rem, 2.5vw, 1.5rem);">Reliable Partnership</h3>
+                                    <p style="color: #666; font-size: clamp(0.95rem, 2vw, 1.1rem); line-height: 1.6;">Our company maintains consistent service quality, ensuring year-round availability without interruptions.</p>
+                                </div>
+                                <!-- Feature 2 -->
+                                <div class="feature-card" style="background: white; padding: clamp(20px, 4vw, 30px); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                                    <div style="color: #ff6b00; font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: clamp(10px, 2vw, 15px);">👥</div>
+                                    <h3 style="color: #333; margin-bottom: 15px;">Expert Team</h3>
+                                    <p style="color: #666;">Our professionals possess exceptional competence and continuously enhance their expertise.</p>
+                                </div>
+                                <!-- Feature 3 -->
+                                <div class="feature-card" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                    <div style="color: #ff6b00; font-size: 2rem; margin-bottom: 15px;">📊</div>
+                                    <h3 style="color: #333; margin-bottom: 15px;">Risk Management</h3>
+                                    <p style="color: #666;">We provide recommendations for safe tax load levels and implement reliable control systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
 <hr />
-<div id="block78">
-<section>
-<div id="block78">
-<section>
-<h2><span style="text-align: justify;">Quality&nbsp;</span><span style="text-align: justify;">&ndash; professionalism and competence</span></h2>
-</section>
-</div>
+<!-- Quality Section -->
+<section class="quality-section" style="padding: 60px 0; background: #f8f9fa;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+        <h2 style="text-align: center; color: #333; font-size: 2.2rem; margin-bottom: 40px;">Quality – Professionalism and Competence</h2>
+        
+        <div class="quality-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Quality Card 1 -->
+            <div class="quality-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">⏰</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Our company does not go on vacation, does not get sick and does not quit suddenly.</p>
+                </div>
+            </div>
 
-<div id="block80">
-<section>
-<ul>
-	<li style="text-align: justify;">Our company does not go on vacation, does not get sick and does not quit suddenly.&nbsp;</li>
-	<li style="text-align: justify;">Exceptional&nbsp;Professional competence&nbsp;employees.&nbsp;</li>
-	<li style="text-align: justify;">Recommendations&nbsp;Safe tax load level.&nbsp;</li>
-	<li style="text-align: justify;">Reliable internal control system&nbsp;(Auditors check all reporting before delivery).&nbsp;</li>
-	<li style="text-align: justify;">Optimization of financial activities and&nbsp;Minimum risks.</li>
-</ul>
+            <!-- Quality Card 2 -->
+            <div class="quality-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">👥</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Exceptional Professional competence employees.</p>
+                </div>
+            </div>
+
+            <!-- Quality Card 3 -->
+            <div class="quality-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">📊</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Recommendations Safe tax load level.</p>
+                </div>
+            </div>
+
+            <!-- Quality Card 4 -->
+            <div class="quality-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">✓</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Reliable internal control system (Auditors check all reporting before delivery).</p>
+                </div>
+            </div>
+
+            <!-- Quality Card 5 -->
+            <div class="quality-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">💡</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Optimization of financial activities and Minimum risks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-</div>
-</section>
-</div>
     </div>
 
 
@@ -378,177 +889,258 @@ body {
 
 
 
-<div class="b-category ">
-        <div class="category__items">
-        
-            <div class="category__item category__item-333 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="audit/index.html">
-                            <img alt="Аудит"
-                                 title="Фото аудит"
-                                 src="files/gallery/62/preview/cat3_1506432691_1682085461.jpg" />
-                        </a>
+<!-- Services Grid Section -->
+<section class="services-section" style="padding: 60px 0; background: #fff;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+        <h2 style="text-align: center; color: #333; font-size: 2.2rem; margin-bottom: 40px;">Our Services</h2>
+        <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; justify-items: center;">
+            <!-- Audit -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="audit/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/62/preview/cat3_1506432691_1682085461.jpg" alt="Audit" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
                     </div>
-
-                    <div class="category__title"><a href="audit/index.html">Audit</a></div>
-
-                                    </div>
-            </div>
-
-        
-            <div class="category__item category__item-341 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="konsalting/index.html">
-                            <img alt="Консалтинг"
-                                 title="Фото консалтинг"
-                                 src="files/gallery/68/preview/cat1_1506432212_1682088936.png" />
-                        </a>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">📊</span>
+                            Audit
+                        </h3>
                     </div>
-
-                    <div class="category__title"><a href="konsalting/index.html">Consulting</a></div>
-
-                                    </div>
+                </a>
             </div>
 
-        
-            <div class="category__item category__item-338 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="buhgalterskij-uchet/index.html">
-                            <img alt="Бухгалтерский учет"
-                                 title="Фото бухгалтерский учет"
-                                 src="files/gallery/63/preview/cat1_1506432212_1682085961.jpg" />
-                        </a>
+            <!-- Consulting -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="consalting/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/68/preview/cat1_1506432212_1682088936.png" alt="Consulting" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
                     </div>
-
-                    <div class="category__title"><a href="buhgalterskij-uchet/index.html">Accounting</a></div>
-
-                                    </div>
-            </div>
-
-        
-            <div class="category__item category__item-339 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="nalogovyj-uchet/index.html">
-                            <img alt="Налоговый учет"
-                                 title="Фото налоговый учет"
-                                 src="files/gallery/64/preview/cat4_1506432945_1682086516.jpg" />
-                        </a>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">💼</span>
+                            Consulting
+                        </h3>
                     </div>
-
-                    <div class="category__title"><a href="nalogovyj-uchet/index.html">Tax accounting</a></div>
-
-                                    </div>
+                </a>
             </div>
 
-        
-            <div class="category__item category__item-342 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="yuridicheskie-uslugi/index.html">
-                            <img alt="Юридические услуги"
-                                 title="Фото юридические услуги"
-                                 src="files/gallery/65/preview/cat2_1506432673_1682086639.jpg" />
-                        </a>
+            <!-- Accounting -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="accounting/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/63/preview/cat1_1506432212_1682085961.jpg" alt="Accounting" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
                     </div>
-
-                    <div class="category__title"><a href="yuridicheskie-uslugi/index.html">Legal services</a></div>
-
-                                    </div>
-            </div>
-
-        
-            <div class="category__item category__item-344 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="kadrovyj-uchet/index.html">
-                            <img alt="Кадровый учет"
-                                 title="Фото кадровый учет"
-                                 src="files/gallery/66/preview/cat1_1506432212-1_1682086993.png" />
-                        </a>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">📃</span>
+                            Accounting
+                        </h3>
                     </div>
-
-                    <div class="category__title"><a href="kadrovyj-uchet/index.html">Personnel records</a></div>
-
-                                    </div>
+                </a>
             </div>
 
-        
-            <div class="category__item category__item-340 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="bezopasnost-sdelki/index.html">
-                            <img alt="Безопасность сделки"
-                                 title="Фото безопасность сделки"
-                                 src="files/gallery/67/preview/cat1_1506432212-2_1682089246.png" />
-                        </a>
+            <!-- Tax Accounting -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="tax accounting/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/64/preview/cat4_1506432945_1682086516.jpg" alt="Tax Accounting" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
                     </div>
-
-                    <div class="category__title"><a href="bezopasnost-sdelki/index.html">The safety of the transaction</a></div>
-
-                                    </div>
-            </div>
-
-        
-            <div class="category__item category__item-343 ">
-                <div class="category__inner">
-                    <div class="category__imgbox">
-                        <a href="msfo/index.html">
-                            <img alt="МСФО"
-                                 title="Фото мсфо"
-                                 src="files/gallery/69/preview/cat1_1506432212-3_1682089448.png" />
-                        </a>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">💰</span>
+                            Tax Accounting
+                        </h3>
                     </div>
-
-                    <div class="category__title"><a href="msfo/index.html">IFRS</a></div>
-
-                                    </div>
+                </a>
             </div>
 
+            <!-- Legal Services -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="Legal services/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/65/preview/cat2_1506432673_1682086639.jpg" alt="Legal Services" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2.5rem; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);"></div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">⚖️</span>
+                            Legal Services
+                        </h3>
+                    </div>
+                </a>
             </div>
-</div>
+
+            <!-- Personnel Records -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="personnel records/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/66/preview/cat1_1506432212-1_1682086993.png" alt="Personnel Records" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">👥</span>
+                            Personnel Records
+                        </h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Transaction Safety -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="security-transactions/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/67/preview/cat1_1506432212-2_1682089246.png" alt="Transaction Safety" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">🔒</span>
+                            Transaction Safety
+                        </h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- IFRS -->
+            <div class="service-card" style="width: 100%; max-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                <a href="IFRS/index.html" style="text-decoration: none; color: inherit;">
+                    <div style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="files/gallery/69/preview/cat1_1506432212-3_1682089448.png" alt="IFRS" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);"></div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.3rem; color: #ff6b00;">🌐</span>
+                            IFRS
+                        </h3>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</section>
 
 
 
     <div class="b-editor">
-        <div id="block78">
-<section>
-<h2 style="text-align: justify;">You save on:</h2>
+        <!-- Savings Section -->
+<section class="savings-section" style="padding: 60px 0; background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat fixed; position: relative;">
 
-<ul>
-	<li style="text-align: justify;">Insurance premiums - 30% from the salary of accounting staff.</li>
-	<li style="text-align: justify;">Rent of premises and organization of jobs for the accounting department.</li>
-	<li style="text-align: justify;">Software (1C, legal programs, electronic reporting services).</li>
-	<li style="text-align: justify;">Stationery.</li>
-</ul>
-</section>
-</div>
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+        <h2 style="text-align: center; color: #333; font-size: 2.2rem; margin-bottom: 40px;">You Save On</h2>
+        
+        <div class="savings-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            <!-- Saving Item 1 -->
+            <div class="saving-card" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); padding: 25px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
 
-<div id="block80">
-<section>
-<div>
-<hr />
-<h2 style="text-align: justify;">Safety&ndash;economic, legal and information</h2>
-</div>
-</section>
-</div>
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">💰</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Insurance premiums - 30% from the salary of accounting staff</p>
+                </div>
+            </div>
 
-<div id="block82">
-<section>
-<ul>
-	<li style="text-align: justify;">We&nbsp;We take full responsibility&nbsp;for accounting.</li>
-	<li style="text-align: justify;">Professional&nbsp;The risks of our company are insured</li>
-	<li style="text-align: justify;">Particular attention is paid&nbsp;Privacy.</li>
-	<li style="text-align: justify;">The documents and the accounting base of your company will be&nbsp;be stored outside your office&nbsp;(however, like ours).</li>
-	<li style="text-align: justify;">All the contracts that you are going to conclude can be checked for the availability&nbsp;tax and financial risks&nbsp;(included in the price of service).</li>
-	<li style="text-align: justify;">We hold your hand on the pulse&nbsp;changes in the legislation&nbsp;And in time we inform customers about the need to change the financial structure of the business.</li>
-	<li style="text-align: justify;">The legal department may be provided&nbsp;Emergency support.</li>
-</ul>
+            <!-- Saving Item 2 -->
+            <div class="saving-card" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); padding: 25px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">🏢</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Rent of premises and organization of jobs for the accounting department</p>
+                </div>
+            </div>
+
+            <!-- Saving Item 3 -->
+            <div class="saving-card" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); padding: 25px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">💻</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Software (1C, legal programs, electronic reporting services)</p>
+                </div>
+            </div>
+
+            <!-- Saving Item 4 -->
+            <div class="saving-card" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); padding: 25px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">📝</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Stationery and office supplies</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-</div>
+
+<!-- Safety Section -->
+<section class="safety-section" style="padding: 60px 0; background: #f8f9fa;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+        <h2 style="text-align: center; color: #333; font-size: 2.2rem; margin-bottom: 40px;">Safety – Economic, Legal and Information</h2>
+        
+        <div class="safety-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Safety Item 1 -->
+            <div class="safety-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">✓</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">We take full responsibility for accounting</p>
+                </div>
+            </div>
+
+            <!-- Safety Item 2 -->
+            <div class="safety-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">🛡️</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Professional risks of our company are fully insured</p>
+                </div>
+            </div>
+
+            <!-- Safety Item 3 -->
+            <div class="safety-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">🔒</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Particular attention is paid to privacy and data security</p>
+                </div>
+            </div>
+
+            <!-- Safety Item 4 -->
+            <div class="safety-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">📁</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Documents and accounting data are securely stored off-site</p>
+                </div>
+            </div>
+
+            <!-- Safety Item 5 -->
+            <div class="safety-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">⚖️</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">All contracts are checked for tax and financial risks (included in service)</p>
+                </div>
+            </div>
+
+            <!-- Safety Item 6 -->
+            <div class="safety-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">📋</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">We monitor legislation changes and inform clients about necessary business structure updates</p>
+                </div>
+            </div>
+
+            <!-- Safety Item 7 -->
+            <div class="safety-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <span style="font-size: 1.5rem; color: #ff6b00;">⚡</span>
+                    <p style="margin: 0; color: #555; line-height: 1.6;">Emergency legal support available when needed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </div>
 
     <div id="js-1"
@@ -558,7 +1150,7 @@ body {
         </div>
         <form id="form_e843ac7bde64d601d74e91ae8c62e456" method="post"
           data-form_name="1"
-          action="https://fin-stab.ru/response/" data-module_name="Forms"
+          action="" data-module_name="Forms"
           data-hash="e843ac7bde64d601d74e91ae8c62e456" enctype="multipart/form-data"
                                   data-check-use-js="1">
 
@@ -585,10 +1177,10 @@ body {
                     </div>
 </div>                                                                                            <div class="form__col-1-2">
     <div class="form__item form__item--label-none form__item--icon ">
-                    <div class="form__label">Телефон</div>
+                    <div class="form__label">Telephone</div>
                 <div class="form__input form__input--input  ">
             <input
-                data-hash="e843ac7bde64d601d74e91ae8c62e456"
+                data-hash=""
                 data-name=""
                 name=""
                 id="phone_e843ac7bde64d601d74e91ae8c62e456"
@@ -748,7 +1340,7 @@ body {
             </div>
             <div class="grid__item2">
                                 <div class="b-counter">
-                    <!--noindex--><p class="b-socium"><a style="float:left" href="https://t.me/FinStab" target="_blank"><img alt="telegram" src="files/110/novyj-proekt-10.png" style="width: 30px;" /></a></p>
+                    
 <p class="b-socium"><a style="float:left" href="https://wa.me/79039610911" target="_blank"><img alt="whatsapp" src="files/110/novyj-proekt-100.png" style="width:45px" /></a></p><!--/noindex-->
                 </div>
             </div>
@@ -758,13 +1350,13 @@ body {
 		<tr>
 			<td>
 			<div class="b-tel b-inb-responsive" style="    margin-top: 3px;
-    margin-bottom: 4px;"><a href="tel:+74951234567"><span style="color:#FFFFFF;">+7 (495) 961-09-11</span></a></div>
+    margin-bottom: 4px;"><a href="tel:+971527830384"><span style="color:#FFFFFF;">+971 52 783 0384</span></a></div>
 
 			<div class="b-address b-inb-responsive">Call from 10:00 to 18:00</div>
 			</td>
 			<td><span style="color:#FFFFFF;display: inline-block;
     margin-top: 9px;
-    margin-bottom: 5px;">Moscow, Peasant Square, 11, p. 1</span><br />
+    margin-bottom: 5px;">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai U.A.E </span><br />
 			<a href="contacts/index.html" rel="nofollow">View on map</a></td>
 		</tr>
 	</tbody>
@@ -781,7 +1373,7 @@ body {
         <a href="index.html"  class=""><ins></ins>Гlaveish</a> |        <a href="sitemap/index.html"  class=""><ins></ins>Site map</a> |        <a href="contacts/index.html"  class=""><ins></ins>Feedback</a> |        <a href="privacy_policy/index.html"  target="_blank"  class=""><ins></ins>Privacy Policy</a>    </p>
             </div>
             <div class="grid__item7">
-                                <p><a href="https://www.web-canape.ru/razrabotka-sajta/?utm_source=copyright" target="_blank">Development</a> и <a href="https://www.web-canape.ru/prodvizhenie-sajtov/?utm_source=copyright" target="_blank">Marketing</a> - WebCanape</p>            </div>
+                <p><a href="index.html" target="_blank">Copyright &copy; Persora LLC 2025 All rights reserved. &ndash; Developed By TechTribe 
         </div>
         <div class="footerbox__left"></div>
         <div class="footerbox__right"></div>
@@ -850,11 +1442,11 @@ window.cookieconsent.initialise({
         <div class="sidebar__content">
             
 <div class="sidebar__item sidebar__txt3">
-      <div class="b-btn b-btn--consul"><a href="poluchit-konsultaciyu-besplatno/index.html">Get a consultation</a></div>
+      <div class="b-btn b-btn--consul"><a href="Get a free consultation/index.html">Get a consultation</a></div>
 </div>
 
 <div class="sidebar__item sidebar__txt2">
-      <div class="b-btn b-btn--service"><a href="ostavit-zayavku-na-uslugi-ili-konsultaciyu/index.html">Order services</a></div>
+      <div class="b-btn b-btn--service"><a href="leave a request for services or consultation/index.html">Order services</a></div>
 </div>
 <div class="b-sidebar-menu b-sidebar-menu--topmenu">
     <ul class="sidebar-menu__level-1">
@@ -888,10 +1480,7 @@ window.cookieconsent.initialise({
                                                 <li class="sidebar-menu__item-1 js-sidebarmenu-item">
                     <span class="js-sidebarmenu-achor-wrap">
                         <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="ceny/index.html" >
-                                                            <ins></ins>
-                                                        Prices
-                        </a>
+                        
                     </span>
                                     </li>
                                                 <li class="sidebar-menu__item-1 sidebar-menu__item-1--last js-sidebarmenu-item">
@@ -909,353 +1498,350 @@ window.cookieconsent.initialise({
                                     <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
                     <span class="js-sidebarmenu-achor-wrap">
                         <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="audit/index.html" >
-                                                            <ins></ins>
-                                                        Audit
-                        </a>
-                    </span>
-                                            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                        <a href="../audit/index.html" >
+                            <ins></ins>
+                        Audit
+</a>
+</span>
+            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../audit/Mandatory audit/index.html" >
+                Mandatory Audit
+            </a>
+        </span>
+                                            </li>
                                                                                                 <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="audit/obyazatelnyj-audit/index.html" >
-                                                Mandatory audit
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="audit/iniciativnyj-audit/index.html" >
-                                                Initiative audit
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="audit/nalogovyj-audit/index.html" >
-                                                Tax audit
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="audit/ekspress-analiz/index.html" >
-                                                Express analysis
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                    </ul>
-                                    </li>
-                                                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
-                    <span class="js-sidebarmenu-achor-wrap">
-                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="konsalting/index.html" >
-                                                            <ins></ins>
-                                                        Consulting
-                        </a>
-                    </span>
-                                            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../audit/Initiative audit/index.html" >
+                Initiative Audit
+            </a>
+        </span>
+                                            </li>
                                                                                                 <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="konsalting/kaznachejskoe-soprovozhdenie/index.html" >
-                                                Treasury accompaniment
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="konsalting/nalogovoe-planirovanie/index.html" >
-                                                Tax planning
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="konsalting/sostavlenie-biznes-planov/index.html" >
-                                                Drawing up business plans
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="konsalting/konsultacionnoe-soprovozhdenie-proektov/index.html" >
-                                                Consultation of project escort
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="konsalting/ekspertnyj-konsalting/index.html" >
-                                                Expert consulting
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="konsalting/nalogovyj-konsalting/index.html" >
-                                                Tax consulting
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                    </ul>
-                                    </li>
-                                                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
-                    <span class="js-sidebarmenu-achor-wrap">
-                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="buhgalterskij-uchet/index.html" >
-                                                            <ins></ins>
-                                                        Accounting
-                        </a>
-                    </span>
-                                            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../audit/Tax audit/index.html" >
+                Tax Audit
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../audit/Express analysis/index.html" >
+                Express Analysis
+            </a>
+        </span>
+                                            </li>
+                                                    </ul>
+    </li>
+                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
+<span class="js-sidebarmenu-achor-wrap">
+<span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+<a href="../consalting/index.html" >
+                            <ins></ins>
+                        Consulting
+</a>
+</span>
+            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../consalting/Treasury support/index.html" >
+                Treasury Support
+            </a>
+        </span>
+                                            </li>
                                                                                                 <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="buhgalterskij-uchet/buhgalterskoe-obsluzhivanie/index.html" >
-                                                Бухгалтерское обслуживание
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="buhgalterskij-uchet/podgotovka-nulevoj-otchetnosti/index.html" >
-                                                Preparation of zero reporting
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="buhgalterskij-uchet/postanovka-buhgalterskogo-ucheta/index.html" >
-                                                Accounting
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="buhgalterskij-uchet/vosstanovlenie-buhgalterskogo-ucheta/index.html" >
-                                                Recovery of accounting
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                    </ul>
-                                    </li>
-                                                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
-                    <span class="js-sidebarmenu-achor-wrap">
-                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="nalogovyj-uchet/index.html" >
-                                                            <ins></ins>
-                                                        Tax accounting
-                        </a>
-                    </span>
-                                            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../consalting/Tax planning/index.html" >
+                Tax Planning
+            </a>
+        </span>
+                                            </li>
                                                                                                 <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="nalogovyj-uchet/podgotovka-nalogovoj-otchetnosti/index.html" >
-                                                Preparation of tax reporting
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="nalogovyj-uchet/pomosch-v-vybore-sistemy-nalogooblozheniya/index.html" >
-                                                Help in choosing a tax system
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="nalogovyj-uchet/nalogovye-konsultacii/index.html" >
-                                                Tax consultations
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="nalogovyj-uchet/3-ndfl/index.html" >
-                                                3-NDFL
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="nalogovyj-uchet/sodejstvie-pri-nalogovyh-proverkah/index.html" >
-                                                Assistance in tax audits
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                    </ul>
-                                    </li>
-                                                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
-                    <span class="js-sidebarmenu-achor-wrap">
-                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="yuridicheskie-uslugi/index.html" >
-                                                            <ins></ins>
-                                                        Legal services
-                        </a>
-                    </span>
-                                            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../consalting/Drawing up business plans/index.html" >
+                Business Planning
+            </a>
+        </span>
+                                            </li>
                                                                                                 <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="yuridicheskie-uslugi/yuridicheskie-konsultacii/index.html" >
-                                                Legal consultations
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="yuridicheskie-uslugi/uslugi-v-oblasti-avtorskogo-prava/index.html" >
-                                                Copyright services
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="yuridicheskie-uslugi/uslugi-advokata/index.html" >
-                                                The lawyer's services
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="yuridicheskie-uslugi/predstavitelstvo-v-organah/index.html" >
-                                                Representation of interests in the organs
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                    </ul>
-                                    </li>
-                                                <li class="sidebar-menu__item-1 js-sidebarmenu-item">
-                    <span class="js-sidebarmenu-achor-wrap">
-                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="kadrovyj-uchet/index.html" >
-                                                            <ins></ins>
-                                                        Personnel records
-                        </a>
-                    </span>
-                                    </li>
-                                                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
-                    <span class="js-sidebarmenu-achor-wrap">
-                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="bezopasnost-sdelki/index.html" >
-                                                            <ins></ins>
-                                                        The safety of the transaction
-                        </a>
-                    </span>
-                                            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../consalting/Consulting and project support/index.html" >
+                Project Support Consulting
+            </a>
+        </span>
+                                            </li>
                                                                                                 <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="bezopasnost-sdelki/osmotritelnost-pri-vybore-kontragenta/index.html" >
-                                                Help in choosing a counterparty
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="bezopasnost-sdelki/finansovaya-logistika/index.html" >
-                                                Financial logistics
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="bezopasnost-sdelki/monitoring-rynochnyh-cen/index.html" >
-                                                Monitoring of market prices
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                    </ul>
-                                    </li>
-                                                <li class="sidebar-menu__item-1 sidebar-menu__item-1--last sidebar-menu__item-1--haschild js-sidebarmenu-item">
-                    <span class="js-sidebarmenu-achor-wrap">
-                        <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                        <a href="msfo/index.html" >
-                                                            <ins></ins>
-                                                        IFRS
-                        </a>
-                    </span>
-                                            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../consalting/Expert consulting/index.html" >
+                Expert consulting
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../consalting/Tax consulting/index.html" >
+                Tax consulting
+            </a>
+        </span>
+                                            </li>
+                                                    </ul>
+    </li>
+                <li class="sidebar-menu__item-1 sidebar-menu__item-1--on sidebar-menu__item-1--haschild js-sidebarmenu-item">
+<span class="js-sidebarmenu-achor-wrap">
+<span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+<a href="index.html" >
+                            <ins></ins>
+                        Accounting
+</a>
+</span>
+            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="Accounting services/index.html" >
+                Accounting services
+            </a>
+        </span>
+                                            </li>
                                                                                                 <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="msfo/postanovka-ucheta-po-msfo/index.html" >
-                                                Registration of IFRS
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="msfo/transformaciya-otchetnosti-po-msfo/index.html" >
-                                                Reporting transformation for IFRS
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="msfo/konsolidirovannaya-otchetnost-po-msfo/index.html" >
-                                                Reporting on IFRS
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
-                                        <span class="js-sidebarmenu-achor-wrap">
-                                            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
-                                            <a href="msfo/audit-msfo/index.html" >
-                                                Audit IFRS
-                                            </a>
-                                        </span>
-                                                                            </li>
-                                                                                    </ul>
-                                    </li>
-                        </ul>
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="Preparation of zero reporting/index.html" >
+                Preparation of zero reporting
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="Setting up accounting/index.html" >
+                Setting up Accounting
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="Accounting restoration/index.html" >
+                Recovery of accounting
+            </a>
+        </span>
+                                            </li>
+                                                    </ul>
+    </li>
+                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
+<span class="js-sidebarmenu-achor-wrap">
+<span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+<a href="../nalogovyj-uchet/index.html" >
+                            <ins></ins>
+                        Tax Accounting
+</a>
+</span>
+            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../tax accounting/Preparation of tax reports/index.html" >
+                Preparation of tax reporting
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../tax accounting/Help in choosing a tax system/index.html" >
+                Help in choosing a tax system
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../tax accounting/Tax consultations/index.html" >
+                Tax consultations
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../tax accounting/3-NDFL/index.html" >
+                3-NDFL
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../tax accounting/Assistance with tax audits/index.html" >
+                Assistance in tax audits
+            </a>
+        </span>
+                                            </li>
+                                                    </ul>
+    </li>
+                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
+<span class="js-sidebarmenu-achor-wrap">
+<span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+<a href="../Legal services/index.html" >
+                            <ins></ins>
+                        Legal Services
+</a>
+</span>
+            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../Legal services/Legal advice/index.html" >
+                Legal consultations
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../Legal services/Copyright Services/index.html" >
+                Copyright services
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../Legal services/Lawyer services/index.html" >
+                The lawyer's services
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../Legal services/Representation of interests in authorities/index.html" >
+                Representation of interests in the organization
+            </a>
+        </span>
+                                            </li>
+                                                    </ul>
+    </li>
+                <li class="sidebar-menu__item-1 js-sidebarmenu-item">
+<span class="js-sidebarmenu-achor-wrap">
+<span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+<a href="../personnel records/index.html" >
+                            <ins></ins>
+                        HR Management
+</a>
+</span>
+    </li>
+                <li class="sidebar-menu__item-1 sidebar-menu__item-1--haschild js-sidebarmenu-item">
+<span class="js-sidebarmenu-achor-wrap">
+<span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+<a href="../security-transactions/index.html" >
+                            <ins></ins>
+                        Transaction Security
+</a>
+</span>
+            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../security-transactions/Assistance in choosing a counterparty/index.html" >
+                Help in choosing a counterparty
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../security-transactions/Financial logistics/index.html" >
+                Financial logistics
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../security-transactions/Monitoring market prices/index.html" >
+                Monitoring of market prices
+            </a>
+        </span>
+                                            </li>
+                                                    </ul>
+    </li>
+                <li class="sidebar-menu__item-1 sidebar-menu__item-1--last sidebar-menu__item-1--haschild js-sidebarmenu-item">
+<span class="js-sidebarmenu-achor-wrap">
+<span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+<a href="../IFRS/index.html" >
+                            <ins></ins>
+                        IFRS
+</a>
+</span>
+            <ul class="sidebar-menu__level-2 js-sidebarmenu-content">
+                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../IFRS/Setting up accounting according to IFRS/index.html" >
+                IFRS accounting
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../IFRS/Transformation of IFRS reporting/index.html" >
+                Reporting transformation by IFRS
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../IFRS/IFRS reporting/index.html" >
+                IFRS reporting
+            </a>
+        </span>
+                                            </li>
+                                                                                                <li class="sidebar-menu__item-2 sidebar-menu__item-2--last js-sidebarmenu-item">
+        <span class="js-sidebarmenu-achor-wrap">
+            <span class="sidebar-menu__dropicon js-sidebarmenu-achor"></span>
+            <a href="../IFRS/IFRS audit/index.html" >
+                Audit IFRS
+            </a>
+        </span>
+                                            </li>
+                                                    </ul>
+    </li>
+</ul>
 </div>
 <div class="sidebar__item sidebar__txt1">
-      <div class="b-tel b-inb-responsive"><a href="tel:+74959610911" rel="nofollow">+7 (495) 961-09-11</a></div>
+<div class="b-tel b-inb-responsive"><a href="tel:+971527830384" rel="nofollow">+971 52 783 0384</a></div>
 
 <div class="b-address b-inb-responsive">Call from 10:00 to 18:00</div>
 </div>
 
 <div class="sidebar__item sidebar__txt4">
-      Moscow, Peasant Square, 11, p. 1&nbsp; &nbsp; &nbsp;<a href="contacts/index.html" rel="nofollow">Look on the map</a></div>
+Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai U.A.E&nbsp; &nbsp; &nbsp;<a href="../contacts/index.html" rel="nofollow">View on map</a></div>
 
 <div class="sidebar__item sidebar__txt5">
-      <div class="b-socium">
-<div class="socium__item"><a rel="nofollow" href="https://t.me/FinStab" target="_blank"><span class=" fab fa-telegram sk-fontawesome    " style="font-size:20px;">&nbsp;</span></a></div>
+<div class="b-socium">
 
 <div class="socium__item"><a rel="nofollow" href="https://wa.me/79039610911" target="_blank"><span class=" fab fa-whatsapp sk-fontawesome    " style="font-size:20px;">&nbsp;</span></a></div>
 </div>
 </div>
-        </div>
-    </div>
-</div><script src="https://fin-stab.ru/assets/cc715c12/js/adaptive_mode.js?v=1684828821"></script>        
-    <div style="display:none">
-    </div>
+</div>
+</div>
+</div><script src=""></script>        
+<div style="display:none">
+</div>
 </body>
-
-<!-- Mirrored from fin-stab.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Apr 2025 15:13:16 GMT -->
 </html>
